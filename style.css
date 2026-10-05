@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    background: linear-gradient(
+        135deg,
+        #111827 0%,
+        #17152F 45%,
+        #24154A 75%,
+        #111827 100%
+    );
+
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+
+
+.glow {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.45;
+    z-index: 0;
+}
+
+.glow1 {
+    background: #ff00ee33;
+    top: -100px;
+    left: -100px;
+}
+
+.glow2 {
+    background: #b53bf6;
+    right: -100px;
+    top: 35%;
+}
+
+.glow3 {
+    background: #A78BFA;
+    bottom: -150px;
+    left: 35%;
+}
+
+
+.home {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+.elsa {
+    position: absolute;
+    
+    right: 2%;
+    bottom: -100px;
+    z-index: 2;
+}
+
+
+
+.top-name {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    z-index: 3;
+}
+
+
+
+
+
+
+.main-text {
+    position: absolute;
+    left: 8%;
+    top: 28%;
+    z-index: 3;
+}
+
+.small-text {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #c4b5fd;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 145px;
+    font-weight: 300;
+    line-height: 0.82;
+    margin: 0;
+    letter-spacing: -7px;
+    font-style:oblique;
+    text-shadow: 4px 2px 2px plum ;
+    
+    animation: elsaReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+   
+    transform: translateX(-50px);
+    
+
+}
+
+h1 span {
+    color: #c084fc;
+    font-weight: 300;
+    
+    animation: elsaReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+    
+    transform: translateX(-50px);
+}
+@keyframes elsaReveal {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.description {
+    width: 330px;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+
+
+
+
+.side-text {
+    position: absolute;
+    right: 4%;
+    top: 45%;
+    z-index: 3;
+    text-align: right;
+}
+
+.side-text p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #d8b4fe;
+    margin: 8px 0;
+}
+
+
+
+
+.bottom-left {
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #a1a1aa;
+    z-index: 3;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #a1a1aa;
+    z-index: 3;
+}
+.bottom-right2{
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+
+}
+#hobbies {
+    padding: 70px;
+    text-align: center;
+    
+   
+    
+}
+
+#hobbies h2 {
+    font-size: 45px;
+    color: violet;
+    text-shadow: 0 0 15px violet;
+}
+
+.hobby-intro {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-style: oblique;
+}
+
+
+.hobby-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.hobby-card {
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border: 2px solid lavender;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 15px rgba(238, 130, 238, 0.4);
+
+    transition: 0.4s;
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+.hobby-card h3 {
+    margin-top: 20px;
+    color: plum;
+    font-size: 24px;
+}
+
+.hobby-card p {
+    margin-top: 20px;
+    color: white;
+    line-height: 1.5;
+    padding: 0 15px 15px;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px violet;
+}
+
+.hobby-card:hover img {
+    transform: scale(1.2);
+}
+.mynavbar {
+    background: plum ;
+
+    
+}
+.nav-link{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: powderblue;
+}
+.nav-link active {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: powderblue;}
+#preloader{
+    background: plum url("loading.gif") no-repeat center center;
+    height: 100%;
+    width: 100%;
+    border: none;
+    position: fixed;
+    background-size: 100%;
+    z-index: 10000;
+}
+#Abtme{
+    text-align: center;
+    font-size: 50px;
+    color: plum;
+     text-shadow: 0 0 15px violet;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    padding: 20px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: gray;
+}
+.smallcards{
+    width: 300px;
+    height: 200px;
+    background-color: hsl(300, 47%, 75%);
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap:80px;
+    
+    
+
+
+}
+.mygoals{
+    background-color:#d8b4fe;
+}
